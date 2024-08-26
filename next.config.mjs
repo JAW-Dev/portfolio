@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	output: 'export',
-	basePath: 'jaw-dev.github.io/portfolio/',
+	basePath: '/portfolio',
 };
 
 export default nextConfig;
