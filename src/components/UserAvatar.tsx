@@ -1,7 +1,8 @@
 //Components
-import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 // Images
 import Profile from '../assets/images/profile.jpg';
+
 
 const UserAvatar = () => {
 	return (
