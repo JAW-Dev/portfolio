@@ -1,5 +1,6 @@
 //Components
-import UserAvatar from "@/components/UserAvatar"
+import UserAvatar from "@/components/UserAvatar";
+import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,23 +8,27 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
+// Data
+import UserMenuItems from "@/data/UserMenuData";
+
 
 const UserMenu = () => {
 	return (
-		<DropdownMenu>
-			<DropdownMenuTrigger className="focus:outline-none">
-				<UserAvatar />
-			</DropdownMenuTrigger>
-			<DropdownMenuContent className="mr-1">
-				<DropdownMenuLabel>My Account</DropdownMenuLabel>
-				<DropdownMenuSeparator />
-				<DropdownMenuItem>Profile</DropdownMenuItem>
-				<DropdownMenuItem>Billing</DropdownMenuItem>
-				<DropdownMenuItem>Team</DropdownMenuItem>
-				<DropdownMenuItem>Subscription</DropdownMenuItem>
-			</DropdownMenuContent>
-		</DropdownMenu>
+			<DropdownMenu>
+					<DropdownMenuTrigger className="focus:outline-none">
+							<UserAvatar />
+					</DropdownMenuTrigger>
+					<DropdownMenuContent className="mr-1">
+							<DropdownMenuLabel>My Account</DropdownMenuLabel>
+							<DropdownMenuSeparator />
+							{UserMenuItems.map((item) => (
+									<DropdownMenuItem key={item.name}>
+										<Link href={item.url}>{item.name}</Link>
+									</DropdownMenuItem>
+							))}
+					</DropdownMenuContent>
+			</DropdownMenu>
 	 );
 }
 
