@@ -13,7 +13,7 @@ import {
 import UserMenuItems from "@/data/UserMenuData";
 
 
-const UserMenu = () => {
+const UserMenu: React.FC = () => {
 	return (
 			<DropdownMenu>
 					<DropdownMenuTrigger className="focus:outline-none">

@@ -4,7 +4,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Profile from '../assets/images/profile.jpg';
 
 
-const UserAvatar = () => {
+const UserAvatar: React.FC = () => {
 	return (
 		<Avatar>
 			<AvatarImage
