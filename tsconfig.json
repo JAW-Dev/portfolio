@@ -1,9 +1,5 @@
 {
   "compilerOptions": {
-    "types": [
-      "@testing-library/jest-dom",
-      "jest"
-    ],
     "target": "ES6",
     "baseUrl": ".",
     "lib": [
