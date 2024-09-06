@@ -1,5 +1,5 @@
 import React from 'react';
-//Components
+// Components
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 // Images
 import Profile from '../assets/images/profile.jpg';
