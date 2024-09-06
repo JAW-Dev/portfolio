@@ -1,4 +1,5 @@
-//Components
+import React from 'react';
+// Components
 import UserAvatar from "@/components/UserAvatar";
 import Link from "next/link";
 import {

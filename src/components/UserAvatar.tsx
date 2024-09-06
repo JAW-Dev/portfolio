@@ -1,8 +1,8 @@
+import React from 'react';
 //Components
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 // Images
 import Profile from '../assets/images/profile.jpg';
-
 
 const UserAvatar: React.FC = () => {
 	return (

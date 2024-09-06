@@ -1,7 +1,8 @@
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 // Images
-import Img from '../assets/images/logo.png';
+import Img from '@/assets/images/logo.png';
 
 const Logo: React.FC = () => {
   return (
