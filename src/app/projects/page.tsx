@@ -4,7 +4,7 @@ import { prefix } from './prefix';
 const Home: React.FC = () => {
   return (
     <main>
-      <h1 className="text-4xl font-bold text-center">Home</h1>
+			<h1 className="text-4xl font-bold text-center">Projects</h1>
     </main>
   );
 }
