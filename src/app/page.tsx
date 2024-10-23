@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { prefix } from './prefix';
 
+/**
+ * Just adding some comments for a test
+ */
+
 const Home: React.FC = () => {
   return (
     <main>
