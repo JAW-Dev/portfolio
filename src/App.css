@@ -10,6 +10,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.App {
+  background: linear-gradient(135deg, hsl(210, 40%, 98%) 0%, hsl(145, 100%, 76%) 100%);
+}
+
 .container {
   @apply mx-auto;
   max-width: 1440px;

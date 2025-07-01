@@ -14,11 +14,11 @@ const App: React.FC = React.memo(() => {
         <div className="px-8 py-4 bg-dark w-full">
           <Header />
         </div>
-        <div className="px-8 py-4 bg-white w-full">
+        <div className="px-8 py-4 w-full">
           <Intro />
           <Projects />
         </div>
-        <div className="px-8 py-4 bg-white w-full">
+        <div className="px-8 py-4 w-full">
           <Footer />
         </div>
       </div>
