@@ -52,7 +52,7 @@ const Projects: React.FC = React.memo(() => {
                 alt={`Screenshot of ${project.title}`}
                 width={600}
                 height={400}
-                className="w-full h-auto rounded mb-4 shadow-sm"
+                className="w-full h-auto rounded mb-4 shadow-md filter grayscale transition duration-300 ease-in-out hover:grayscale-0 focus:grayscale-0 hover:scale-105 hover:shadow-green-700 hover:shadow-lg"
                 loading="lazy"
                 decoding="async"
                 fetchPriority={index === 0 ? 'high' : 'auto'}
