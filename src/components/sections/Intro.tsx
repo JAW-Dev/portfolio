@@ -3,7 +3,7 @@ import React from 'react';
 import ColumnLeft from '../layout/ColumnLeft';
 import ColumnRight from '../layout/ColumnRight';
 
-const Intro: React.FC = () => {
+const Intro: React.FC = React.memo(() => {
   return (
     <section className="container mx-auto px-4 py-32" aria-label="Introductory section about Jason Witt">
       <div className="flex flex-col lg:flex-row gap-8 items-center">
@@ -19,6 +19,6 @@ const Intro: React.FC = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Intro;

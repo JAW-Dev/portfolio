@@ -5,7 +5,7 @@ import ColumnRight from '../layout/ColumnRight';
 
 import { projects } from '../../data/projectsData';
 
-const Projects: React.FC = () => {
+const Projects: React.FC = React.memo(() => {
   return (
     <section
       className="container mx-auto px-4"
@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
     >
       {projects.map((project, index) => (
         <article
-          key={index}
+          key={project.title}
           className="flex flex-col lg:flex-row gap-8 items-center border-t border-gray-300 py-16"
           tabIndex={-1} // Allows keyboard users to focus each project article if needed
           aria-labelledby={`project-title-${index}`}
@@ -50,7 +50,12 @@ const Projects: React.FC = () => {
               <img
                 src={project.image}
                 alt={`Screenshot of ${project.title}`}
+                width={600}
+                height={400}
                 className="w-full h-auto rounded mb-4 shadow-sm"
+                loading="lazy"
+                decoding="async"
+                fetchPriority={index === 0 ? 'high' : 'auto'}
               />
             </a>
           </ColumnRight>
@@ -58,6 +63,6 @@ const Projects: React.FC = () => {
       ))}
     </section>
   );
-};
+});
 
 export default Projects;
