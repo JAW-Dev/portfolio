@@ -7,10 +7,8 @@ import { projects } from '../../data/projectsData';
 
 const Projects: React.FC = React.memo(() => {
   return (
-    <section
-      className="container mx-auto px-4"
-      aria-label="Projects showcase"
-    >
+    <section className="container mx-auto px-4" aria-label="Projects showcase">
+      <h2 className="text-5xl font-bold my-8">My Work</h2>
       {projects.map((project, index) => (
         <article
           key={project.title}
