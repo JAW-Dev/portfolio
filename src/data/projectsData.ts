@@ -5,7 +5,7 @@ import SunriseLabs from '../assets/images/sunriselabs.jpeg';
 
 export const projects = [
   {
-    title: "Admorerd Leadership",
+    title: "Admired Leadership",
     url: "https://admiredleadership.com",
     description: "Admired Leadership is a development platform that draws on 30+ years of research into more than 12,000 high-performing leaders to reveal the daily routines, behaviors, and habits that distinguish exceptional leadership. Originally exclusive to private clients, today's subscribers gain access to a rich digital library featuring 100+ behavior-focused videos, monthly study groups, live events, a private Q&A podcast, weekly book summaries, and a personal liaison to guide onboarding. With a behavioral-first philosophy—eschewing jargon, frameworks, and hacks—it emphasizes what leaders actually do to empower teams, make decisions with clarity and courage, and cultivate psychological safety.",
     image: AdmiredLeadership,
